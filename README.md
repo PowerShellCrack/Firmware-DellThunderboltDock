@@ -3,7 +3,7 @@
 ## Files
 **Check-TBSupportedModels.ps1** - Used for MDT or SCCM Task sequence to check if its supported based on the [ModelsSupported.txt](ModelsSupported.txt) file. Sets SMSTS environment variable SMSTS_TBSupported
 
-**Invoke-TBFirmware.ps1** - Check the supported models as well, and applies the firmware if compatible. Does check for Bios password in plain text file [BIOSPassword.txt](BIOSPassword.txt). It will attempt to susspend bitlocker if enabled. Also sets a SMSTS environment variable SMSTS_TBBatteryCharge, SMSTS_TBRebootRequired which can be used for a reboot sequence. 
+**Invoke-TBFirmware.ps1** - Check the supported models as well, and applies the firmware if compatible. Does check for Bios password in plain text file BIOSPassword.txt (if exists). It will attempt to susspend bitlocker if enabled. Also sets a SMSTS environment variable SMSTS_TBBatteryCharge, SMSTS_TBRebootRequired which can be used for a reboot sequence. 
  
 ## Warning: These updates should be done before plugging in the docking station for the first time.
 
