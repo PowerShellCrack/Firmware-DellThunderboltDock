@@ -25,3 +25,8 @@
  - DellDockingStationFwUp_1.0.0_03192018_TB16.exe
  - ASMedia-USB-Extended-Host-Controller-Driver_3T8M8_WIN_1.16.51.1_A08.EXE
  - Realtek-USB-Audio-Driver_CCV58_WIN_6.3.9600.172_A09.EXE
+ 
+### Originators/Credit
+
+* [@AdmiralTolwyn](https://github.com/AdmiralTolwyn) (Anton Romanyuk)
+* [@NickolajA](https://github.com/NickolajA) (Nickolaj Andersen)
