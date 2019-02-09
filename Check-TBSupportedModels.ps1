@@ -28,6 +28,7 @@ function Write-LogEntry {
     param(
         [parameter(Mandatory=$true, HelpMessage="Value added to the log file.")]
         [ValidateNotNullOrEmpty()]
+        [Alias("Message")]
         [string]$Value,
 
         [parameter(Mandatory=$false)]
@@ -69,7 +70,7 @@ function Write-LogEntry {
         Out-File -InputObject $LogFormat -Append -NoClobber -Encoding Default -FilePath $LogFilePath -ErrorAction Stop
     }
     catch [System.Exception] {
-        Write-LogEntry -Message "Unable to append log entry to $LogFilePath file"
+        Write-Host "Unable to append log entry to $LogFilePath file" -ForegroundColor Red
     }
     If($Outhost){
         Switch($Severity){
